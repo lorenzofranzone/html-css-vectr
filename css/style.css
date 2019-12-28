@@ -13,6 +13,10 @@ Reset */
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Colori */
 
@@ -51,14 +55,158 @@ body {
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
-Typography */
+Row Light and Dark */
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Poppins', sans-serif;
+[class*="row"] {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 120px 65px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+      /* ––––––––––––––––––––––––––––––––––––––––––––––––––
+      Responsive */
+
+      @media screen and (max-width: 999px) {
+
+        [class*="row"] {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+      }
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Box Left */
+
+[class*="row"] h5 {
+  font-size: 14.4px;
+  line-height: 100%;
+  font-weight: normal;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+[class*="row"] h5:before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+  background-size: cover;
+  background-position: center;
+  vertical-align: sub;
+}
+
+
+[class*="row"] .box-left {
+  max-width: 535px;
+}
+
+[class*="row"] .box-left p {
+  line-height: 160%;
+  margin-bottom: 20px;
+}
+
+[class*="row"] .box-left a.link {
+  color: #24c1ed;
+  font-weight: 700;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #24c1ed;
+  display: inline-block;
+  margin-bottom: 64px;
+}
+
+[class*="row"] .box-left a.link:after {
+  content: '\f054';
+  font-family: 'Font Awesome 5 Free';
+  font-size: 10px;
+  font-weight: 800;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Box Right */
+
+[class*="row"] .box-right img {
+  width: 740px;
+}
+
+      /* ––––––––––––––––––––––––––––––––––––––––––––––––––
+      Responsive */
+
+      @media screen and (max-width: 1300px) {
+
+        [class*="row"] .box-right img {
+          width: 100%;
+        }
+
+      }
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Typography */
+
 h1 {
+  font-family: 'Poppins', sans-serif;
   font-size: 40px;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4em;
+}
+
+h2:after {
+  content: '';
+  display: block;
+  border-radius: 2px;
+  width: 30px;
+  height: 2px;
+  margin: 15px 0;
+  border: 1px solid #c8dce2;
+  background: rgba(200,220,226,0.25);
+}
+
+      /* ––––––––––––––––––––––––––––––––––––––––––––––––––
+      Responsive */
+
+      @media screen and (max-width: 999px) {
+
+        h2:after {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+      }
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Row Light */
+
+.row-light h5 {
+  color: #7a8b91;
+}
+
+.row-light h2 {
+  color: #3b4447;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Row Dark */
+
+.row-dark h5 {
+  color: #7a8b91;
+}
+
+.row-dark h2 {
+  color: #3b4447;
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––

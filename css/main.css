@@ -76,3 +76,10 @@ Logos */
         }
 
       }
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Learn */
+
+.learn h5:before {
+  background: url(../img/icolearn.svg);
+}
