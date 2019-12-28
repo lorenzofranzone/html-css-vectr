@@ -23,3 +23,7 @@
   padding: 16px 40px 14.4px;
   margin: 10px;
 }
+
+.jumbo img {
+  width: 100%;
+}
