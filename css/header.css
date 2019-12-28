@@ -45,6 +45,8 @@ header nav {
   color: #536970;
   text-decoration: none;
   text-transform: capitalize;
+  font-size: 14.4px;
+  font-weight: 300;
 }
 
 .main-menu a:hover:not(.btn) {
@@ -59,6 +61,18 @@ header nav {
 
 .main-menu li:last-child {
   margin-left: 8px;
+}
+
+.dropdown:after{
+  content: '\f078';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 800;
+  font-size: 8px;
+  margin-left: 8px;
+}
+
+.main-menu a.dropdown:hover {
+  border-bottom: none;
 }
 
 .fa-bars {
