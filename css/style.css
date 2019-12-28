@@ -1,0 +1,42 @@
+/* //////////////////////////////////////////////////
+––––––––––––––––––––––––––––––––––––––––––––––––––
+GENERAL
+––––––––––––––––––––––––––––––––––––––––––––––––––
+////////////////////////////////////////////////// */
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Colori */
+
+/* verde: #a1de41;
+azzurro: #24c1ed;
+gradient dark: linear-gradient(#232424, #202527);
+color button: #cdd8bc;
+btn dark: #3f4d4e;
+a menu: #536970;
+color hero: #84949a;
+border-bottom header: 1px solid rgba(66,77,81,0.25);
+
+dark color heading: #3b4447;
+dark color txt: #697782;
+dark bg: #1f2324;
+
+light color heading: #eceeef;
+light color txt: #84949a; */
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Layout */
+
+.wrapper {
+  width: 100%;
+  max-width: 1050px;
+  padding: 0 25px;
+}
