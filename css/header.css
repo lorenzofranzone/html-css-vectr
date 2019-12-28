@@ -1,0 +1,83 @@
+header {
+  background: linear-gradient(rgba(32,39,39,0.97), rgba(35,36,36,0.97));
+  border-bottom: 1px solid rgba(66,77,81,0.25);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+header .wrapper {
+  width: 100%;
+  max-width: 1050px;
+  height: 80px;
+  padding: 0 25px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Logo */
+
+header .logo img {
+  width: 100px;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Main Menu */
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu li {
+  list-style: none;
+  display: inline;
+  margin-left: 12px;
+}
+
+.main-menu a {
+  color: #536970;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.main-menu a:hover:not(.btn) {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #24c1ed;
+  color: #fff;
+}
+
+.main-menu li:first-child {
+  margin-left: 0;
+}
+
+.main-menu li:last-child {
+  margin-left: 8px;
+}
+
+.fa-bars {
+  font-size: 29px;
+  color: #eceeef;
+  display: none;
+}
+
+      /* ––––––––––––––––––––––––––––––––––––––––––––––––––
+      Responsive */
+
+      @media screen and (max-width: 900px) {
+
+        .main-menu {
+          display: none;
+        }
+
+        .fa-bars {
+          display: block;
+        }
+
+      }

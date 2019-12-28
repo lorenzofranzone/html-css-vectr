@@ -35,8 +35,33 @@ light color txt: #84949a; */
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Layout */
 
-.wrapper {
-  width: 100%;
-  max-width: 1050px;
-  padding: 0 25px;
+body {
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  color: #697782;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Buttons */
+
+.btn, a.btn {
+  padding: 7px 10px;
+  border-radius: 4px;
+  border: 2px solid;
+  color: #cdd8bc;
+}
+
+.btn-green, a.btn-green {
+  border-color: #a1de41;
+}
+
+.btn-dark, a.btn-dark {
+  border-color: #3f4d4e;
+}
+
+.btn:hover {
+  background: #242a2d;
+  color: #a1de41;
 }
