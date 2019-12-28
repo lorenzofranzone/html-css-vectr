@@ -1,3 +1,25 @@
 .jumbo {
   background: linear-gradient(#232424, #202527);
+  padding-top: 80px;
+}
+
+.jumbo .cta {
+  margin: 70px 0;
+  text-align: center;
+}
+
+.jumbo .cta h1 {
+  color: #eceeef;
+}
+
+.jumbo .cta p {
+  max-width: 760px;
+  margin: 5px auto 20px;
+  color: #84949a;
+  line-height: 160%;
+}
+
+.jumbo .cta .btn-green {
+  padding: 16px 40px 14.4px;
+  margin: 10px;
 }

@@ -43,6 +43,24 @@ body {
   font-size: 16px;
 }
 
+.wrapper {
+  width: 100%;
+  max-width: 1050px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Typography */
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Buttons */
 
@@ -51,6 +69,7 @@ Buttons */
   border-radius: 4px;
   border: 2px solid;
   color: #cdd8bc;
+  display: inline-block;
 }
 
 .btn-green, a.btn-green {
