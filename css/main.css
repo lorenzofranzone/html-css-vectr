@@ -117,6 +117,13 @@ section.real-time .box-left {
 section.real-time .box-right {
   align-self: flex-end;
   margin-top: 180px;
+  justify-content: flex-end;
+}
+
+section.real-time .box-right img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
       /* ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -130,6 +137,59 @@ section.real-time .box-right {
 
         section.real-time .box-right {
           align-self: center;
+        }
+
+      }
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Vector */
+
+section.vector {
+  padding-bottom: 0;
+  background: url("../img/onda.svg");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+section.vector .box-left {
+  align-self: flex-start;
+}
+
+.vector h5:before {
+  background: url(../img/icorealtime.svg);
+}
+
+section.vector .box-right {
+  align-self: flex-end;
+  margin-top: 180px;
+  display: flex;
+  justify-content: space-between!important;
+}
+
+section.vector .box-right img {
+    flex-basis: 49%;
+    flex-shrink: 1;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: top;
+}
+
+      /* ––––––––––––––––––––––––––––––––––––––––––––––––––
+      Responsive */
+
+      @media screen and (max-width: 999px) {
+
+        section.vector {
+          padding-top: 120px;
+          padding-bottom: 70px;
+        }
+
+        section.vector .box-right {
+          align-self: center;
+        }
+
+        section.vector .box-right img {
+            align-self: initial!important;
         }
 
       }

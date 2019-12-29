@@ -96,8 +96,8 @@ Row Light and Dark */
           justify-content: center;
           align-items: center;
           text-align: center;
-          padding-left: 12px;
-          padding-right: 12px;
+          padding-left: 24px;
+          padding-right: 24px;
         }
 
         section[class*="row"] h2:after {
@@ -173,7 +173,32 @@ Box Left */
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Box Right */
 
+[class*="row"]:not(.learn) .box-right {
+  width: 55%;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+}
 
+      /* ––––––––––––––––––––––––––––––––––––––––––––––––––
+      Responsive */
+
+      @media screen and (max-width: 999px) {
+
+        [class*="row"]:not(.learn) .box-right {
+          width: 80%;
+        }
+
+        [class*="row"]:not(.learn) .box-right img {
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+          object-fit: cover;
+          object-position: top;
+          align-self: flex-end;
+        }
+
+      }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Row Light */
