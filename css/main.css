@@ -83,3 +83,53 @@ Learn */
 .learn h5:before {
   background: url(../img/icolearn.svg);
 }
+
+.learn .box-right img {
+  width: 740px;
+}
+
+      /* ––––––––––––––––––––––––––––––––––––––––––––––––––
+      Responsive */
+
+      @media screen and (max-width: 1300px) {
+
+        [class*="row"] .box-right img {
+          width: 100%;
+        }
+
+      }
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Real Time */
+
+section.real-time {
+  padding-bottom: 0;
+}
+
+section.real-time .box-left {
+  align-self: flex-start;
+}
+
+.real-time h5:before {
+  background: url(../img/icorealtime.svg);
+}
+
+section.real-time .box-right {
+  align-self: flex-end;
+  margin-top: 180px;
+}
+
+      /* ––––––––––––––––––––––––––––––––––––––––––––––––––
+      Responsive */
+
+      @media screen and (max-width: 999px) {
+
+        section.real-time {
+          padding-top: 120px;
+        }
+
+        section.real-time .box-right {
+          align-self: center;
+        }
+
+      }

@@ -58,12 +58,32 @@ body {
 Row Light and Dark */
 
 [class*="row"] {
-  max-width: 1500px;
+  width: 100%;
+  /* max-width: 1500px; */
   margin: 0 auto;
-  padding: 120px 65px 70px;
+  padding: 120px 126px 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #e2e9ed;
+}
+
+[class*="row"] h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4em;
+}
+
+[class*="row"] h2:after {
+  content: '';
+  display: block;
+  border-radius: 2px;
+  width: 30px;
+  height: 2px;
+  margin: 15px 0;
+  border: 1px solid #c8dce2;
+  background: rgba(200,220,226,0.25);
 }
 
       /* ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -71,17 +91,29 @@ Row Light and Dark */
 
       @media screen and (max-width: 999px) {
 
-        [class*="row"] {
+        section[class*="row"] {
           flex-direction: column;
           justify-content: center;
           align-items: center;
           text-align: center;
+          padding-left: 12px;
+          padding-right: 12px;
+        }
+
+        section[class*="row"] h2:after {
+          margin-left: auto;
+          margin-right: auto;
         }
 
       }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Box Left */
+
+[class*="row"] .box-left {
+  max-width: 535px;
+  padding-left: 80px;
+}
 
 [class*="row"] h5 {
   font-size: 14.4px;
@@ -100,11 +132,6 @@ Box Left */
   background-size: cover;
   background-position: center;
   vertical-align: sub;
-}
-
-
-[class*="row"] .box-left {
-  max-width: 535px;
 }
 
 [class*="row"] .box-left p {
@@ -130,62 +157,23 @@ Box Left */
   vertical-align: middle;
 }
 
-
-/* ––––––––––––––––––––––––––––––––––––––––––––––––––
-Box Right */
-
-[class*="row"] .box-right img {
-  width: 740px;
-}
-
-      /* ––––––––––––––––––––––––––––––––––––––––––––––––––
-      Responsive */
-
-      @media screen and (max-width: 1300px) {
-
-        [class*="row"] .box-right img {
-          width: 100%;
-        }
-
-      }
-
-/* ––––––––––––––––––––––––––––––––––––––––––––––––––
-Typography */
-
-h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 40px;
-}
-
-h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.4em;
-}
-
-h2:after {
-  content: '';
-  display: block;
-  border-radius: 2px;
-  width: 30px;
-  height: 2px;
-  margin: 15px 0;
-  border: 1px solid #c8dce2;
-  background: rgba(200,220,226,0.25);
-}
-
       /* ––––––––––––––––––––––––––––––––––––––––––––––––––
       Responsive */
 
       @media screen and (max-width: 999px) {
 
-        h2:after {
-          margin-left: auto;
-          margin-right: auto;
+        [class*="row"] .box-left {
+          padding-left: 0;
+          max-width: 100%;
         }
 
       }
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Box Right */
+
+
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Row Light */
@@ -201,12 +189,28 @@ Row Light */
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Row Dark */
 
+.row-dark {
+  background: #1f2324;
+}
+
 .row-dark h5 {
   color: #7a8b91;
 }
 
 .row-dark h2 {
-  color: #3b4447;
+  color: #eceeef;
+}
+
+.row-dark p {
+  color: #84949a;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Typography */
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
