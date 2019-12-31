@@ -1,0 +1,107 @@
+/* footer > * {
+    border-top: 3px solid #1c1d1d;
+} */
+
+footer.row {
+ padding: 0;
+}
+
+.footer-top {
+  border-top: 3px solid #1c1d1d;
+  background: linear-gradient(#1f2121, #1e2325);
+  padding: 30px 0 22px;
+  width: 100%;
+}
+
+.footer-top h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 125%;
+    color: #c0d0d8;
+    line-height: 1.4em;
+}
+
+.footer-top h5:before {
+  display: none!important;
+}
+
+.footer-links {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.footer-links ul {
+  width: 100%;
+}
+
+.footer-links ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #536970;
+}
+
+.footer-links ul li a:hover {
+  color: #3e535e;;
+}
+
+/* Lang */
+
+.footer-lang {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 30px 0 30px;
+}
+
+.select-lang {
+  max-width: 225px;
+  font-size: .8em;
+  font-weight: 700;
+  position: relative;
+  border: 1px solid #3d535e;
+  border-width: 2px;
+  background: #242a2d;
+  border-radius: 40px;
+  padding: 15px 32px 15px 50px;
+  color: #c0d0d8;
+}
+
+.select-lang:before, .select-lang:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  font-size: 18px;
+  color: #3d535e;
+  position: absolute;
+
+}
+
+.select-lang:before {
+  content: '\f0ac';
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.select-lang:after {
+  content: '\f0dd';
+  right: 15px;
+  top: 50%;
+  transform: translateY(-65%);
+}
+
+      /* ––––––––––––––––––––––––––––––––––––––––––––––––––
+      Responsive */
+
+      @media screen and (max-width: 780px) {
+
+        .footer-links {
+          display: none;
+        }
+
+        .select-lang {
+          max-width: 100%;
+
+      }
