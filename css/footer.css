@@ -4,6 +4,7 @@
 
 footer.row {
  padding: 0;
+ display: block!important;
 }
 
 .footer-top {
@@ -103,5 +104,39 @@ footer.row {
 
         .select-lang {
           max-width: 100%;
+        }
 
       }
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Footer Bottom */
+
+.footer-bottom {
+  border-top: 3px solid #1c1d1d;
+  background: linear-gradient(#1f2121, #1e2325);
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  color: #425459;
+  font-size: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logos img {
+  height: 14px;
+  margin: 10px;
+  opacity: .4;
+  text-align: center;
+}
+
+.credits {
+  margin-left: auto;
+}
