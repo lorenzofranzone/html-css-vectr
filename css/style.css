@@ -111,7 +111,7 @@ Row Light and Dark */
 Box Left */
 
 [class*="row"] .box-left {
-  max-width: 535px;
+  max-width: 575px;
   padding-left: 80px;
 }
 
@@ -173,7 +173,7 @@ Box Left */
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Box Right */
 
-[class*="row"]:not(.learn) .box-right {
+[class*="row"]:not(.learn):not(.why) .box-right {
   width: 55%;
   height: 250px;
   overflow: hidden;
@@ -185,11 +185,11 @@ Box Right */
 
       @media screen and (max-width: 999px) {
 
-        [class*="row"]:not(.learn) .box-right {
+        [class*="row"]:not(.learn):not(.why) .box-right {
           width: 80%;
         }
 
-        [class*="row"]:not(.learn) .box-right img {
+        [class*="row"]:not(.learn):not(.why) .box-right img {
           width: 80%;
           margin-left: auto;
           margin-right: auto;
@@ -261,4 +261,5 @@ Buttons */
 .btn:hover {
   background: #242a2d;
   color: #a1de41;
+  cursor: pointer;
 }

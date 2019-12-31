@@ -85,7 +85,7 @@ Learn */
 }
 
 .learn .box-right img {
-  width: 740px;
+  width: 900px;
 }
 
       /* ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -193,3 +193,65 @@ section.vector .box-right img {
         }
 
       }
+
+  /* ––––––––––––––––––––––––––––––––––––––––––––––––––
+  Why */
+
+  section.why {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  section.why img {
+    margin-bottom: 32px;
+  }
+
+  section.why h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3b4447;
+  }
+
+  section.why > div.box-right {
+    text-align: center;
+    max-width: 50%;
+    border-right: 1px solid #e2e9ed;
+    padding: 120px 48px;
+  }
+
+  .note {
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 24px;
+  }
+
+        /* ––––––––––––––––––––––––––––––––––––––––––––––––––
+        Responsive */
+
+        @media screen and (max-width: 999px) {
+
+          section.why {
+            padding-left: 0!important;
+            padding-right: 0!important;
+          }
+
+          section.why > div.box-right {
+            text-align: center;
+            max-width: 100%;
+            border-right: none;
+            border-bottom: 1px solid #e2e9ed;
+            padding: 48px 0;
+          }
+
+          section.why > div.box-right img {
+            width: 40%;
+          }
+
+          section.why > div.box-right h3,
+          section.why > div.box-right p {
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+        }
